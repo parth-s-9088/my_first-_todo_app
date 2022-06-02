@@ -6,17 +6,6 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 
 function App() {
-  const initialTodos = [
-    {
-      Id: 1,
-      body: 'get bread',
-    },
-    {
-      Id: 2,
-      body: 'get butter',
-    },
-  ];
-
   const [todos, setTodos] = useState(
     () => JSON.parse(localStorage.getItem('todos')) || []
   );
